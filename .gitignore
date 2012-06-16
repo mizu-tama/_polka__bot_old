@@ -1,6 +1,10 @@
 
 config.py
 
+tweepy/*
+
 .DS_Store
 
 *.pyc
+
+*~
