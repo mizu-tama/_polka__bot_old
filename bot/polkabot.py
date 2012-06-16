@@ -4,7 +4,7 @@ from twitter import TwitterAuth
 
 class PolkaBot(webapp2.RequestHandler):
     def get(self):
-        self.post("GAEでつぶやくてすと")
+        self.post("だれかきたよ！")
         
     def post(self, tweet):
         twitter = TwitterAuth()
