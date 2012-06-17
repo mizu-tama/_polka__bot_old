@@ -11,8 +11,14 @@ class MainPage(webapp2.RequestHandler):
     def  get(self):
         template = jinja_env.get_template('/templates/index.html')
         self.response.out.write(template.render())
+        
+class InTheRoom(webapp2.RequestHandler):
+    def  get(self):
+        template = jinja_env.get_template('/templates/room.html')
+        self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication(
                 [('/', MainPage),
-                ('/post', PolkaBot)],                                
+                ('/post', PolkaBot),
+                ('/room', InTheRoom)],                            
                 debug=True)
