@@ -21,6 +21,7 @@ body {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto;
     border: solid 1px;
 }
 

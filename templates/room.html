@@ -4,8 +4,20 @@
     <meta charset="UTF-8"/>
     <title>@polka__bot - room</title>
     <link rel="stylesheet" href="/stylesheets/main.css"/>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript" src="/scripts/jquery.timers.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("body").everyTime(10000, function(){
+    $("#timeline").prepend("<article class=\"tweet\">This is test.</article>");
+  });
+});
+
+</script>
 </head>
 <body>
+<div class='contents'></div>
     <div id="timeline">
         <article class="tweet">1</article>
         <article class="tweet">2</article>

@@ -9,6 +9,9 @@ libraries:
   version: latest
 
 handlers:
+- url: /scripts
+  static_dir: scripts
+
 - url: /stylesheets
   static_dir: stylesheets
   
